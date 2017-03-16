@@ -2,31 +2,38 @@
 <html>
 <head>
 <script>
+
         function SendScore(){
 
 var name = document.getElementById("nameInput").value
 var sql ="select O,P,Q,R where Q like'"+name+"%'"
 sql = encodeURI(sql)
-var key ="1N3rcE1YwRhfmFyifiVoLO12IxL5UvKFoRw9bEjxi8tc&gid"
+var key ="1N3rcE1YwRhfmFyifiVoLO12IxL5UvKFoRw9bEjxi8tc"
 var gid = "0"
 window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql+"&key="+key+"&gid="+gid)
         }
-function SendScore2(){
 
+function SendAll(){
 var name = document.getElementById("nameInput").value
-var sql ="select X,Y,Z,AA,AB,AC,AD,AE,AF,AG,AH where Y like'"+name+"%'" or Z like'"+name+"%'" or AA like'"+name+"%'" or AB like'"+name+"%'" or AC like'"+name+"%'" or AD like'"+name+"%'" or AE like'"+name+"%'" or AF like'"+name+"%'" or AG like'"+name+"%'" or AH like'"+name+"%'"
-sql = encodeURI(sql)
-var key ="1N3rcE1YwRhfmFyifiVoLO12IxL5UvKFoRw9bEjxi8tc&gid"
-var gid = "0"
-window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql+"&key="+key+"&gid="+gid)
+//var sql1 ="select A,B,C,D,E,F,G,H,I,J,K where (B like'"+name+"%'" or C like'"+name+"%'" or D like'"+name+"%'" or E like'"+name+"%'" or F like'"+name+"%'" or G like'"+name+"%'" or H like'"+name+"%'" or I like'"+name+"%'" or J like'"+name+"%'" or K like'"+name+"%') and A like 'оржW'"
+//var sql1 ="select A,B,C,D,E,F,G,H,I,J,K where I like '"+name+"%'"
+var sql1 ="select *"
+sql1 = encodeURI(sql1)
+var key1 ="1N3rcE1YwRhfmFyifiVoLO12IxL5UvKFoRw9bEjxi8tc"
+var gid1 ="1561521839"
+window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql1+"&key="+key1+"&gid="+gid1)
         }
+
     </script>
+
+
+
 </head
 <body>
 Name: <input type="text" id="nameInput"><br><br>
 
 <input type="button" value="Send" onclick="SendScore()"><br><br>
-<input type="button" value="Send2" onclick="SendScore2()">
+<input type="button" value="Send2" onclick="SendAll()">
 
 </body>
 </html>
