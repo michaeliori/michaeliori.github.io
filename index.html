@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+        function SendScore(){
+
+var name = document.getElementById("nameInput").value
+var sql ="select O,P,Q,R where Q like'"+name+"%'"
+sql = encodeURI(sql)
+var key ="1N3rcE1YwRhfmFyifiVoLO12IxL5UvKFoRw9bEjxi8tc&gid"
+var gid = "0"
+window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql+"&key="+key+"&gid="+gid)
+        }
+    </script>
+</head
+<body>
+Name: <input type="text" id="nameInput"><br><br>
+
+<input type="button" value="Send" onclick="SendScore()">
+
+</body>
+</html>
