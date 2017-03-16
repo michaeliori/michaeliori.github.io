@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5" />
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>5/6å©šå®´æ¡Œæ¬¡è¡¨</title>
 <script>
 
         function SendScore(){
@@ -16,7 +17,7 @@ window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql
 
 function SendAll(){
 var name = document.getElementById("nameInput").value
-//var sql1 ="select A,B,C,D,E,F,G,H,I,J,K where (B like'"+name+"%'" or C like'"+name+"%'" or D like'"+name+"%'" or E like'"+name+"%'" or F like'"+name+"%'" or G like'"+name+"%'" or H like'"+name+"%'" or I like'"+name+"%'" or J like'"+name+"%'" or K like'"+name+"%') and A like '®à¦W'"
+//var sql1 ="select A,B,C,D,E,F,G,H,I,J,K where (B like'"+name+"%'" or C like'"+name+"%'" or D like'"+name+"%'" or E like'"+name+"%'" or F like'"+name+"%'" or G like'"+name+"%'" or H like'"+name+"%'" or I like'"+name+"%'" or J like'"+name+"%'" or K like'"+name+"%') and A like 'æ¡Œå'"
 //var sql1 ="select A,B,C,D,E,F,G,H,I,J,K where I like '"+name+"%'"
 var sql1 ="select *"
 sql1 = encodeURI(sql1)
@@ -31,11 +32,11 @@ window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql
 
 </head
 <body>
-©m¦W¡G<input type="text" id="nameInput"><br>
-¥i¥H¥u¿é¤J©m<br>
+å§“åï¼š<input type="text" id="nameInput"><br>
+å¯ä»¥åªè¼¸å…¥å§“<br>
 
-<input type="button" value="¬d«ü©w©m¦W" onclick="SendScore()"><br><br>
-<input type="button" value="¬d¸ß¥ş³¡" onclick="SendAll()">
+<input type="button" value="æŸ¥æŒ‡å®šå§“å" onclick="SendScore()"><br><br>
+<input type="button" value="æŸ¥è©¢å…¨éƒ¨" onclick="SendAll()">
 
 </body>
 </html>
