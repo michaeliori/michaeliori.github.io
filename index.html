@@ -11,12 +11,22 @@ var key ="1N3rcE1YwRhfmFyifiVoLO12IxL5UvKFoRw9bEjxi8tc&gid"
 var gid = "0"
 window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql+"&key="+key+"&gid="+gid)
         }
+function SendScore2(){
+
+var name = document.getElementById("nameInput").value
+var sql ="select X,Y,Z,AA,AB,AC,AD,AE,AF,AG,AH where Y like'"+name+"%'" or Z like'"+name+"%'" or AA like'"+name+"%'" or AB like'"+name+"%'" or AC like'"+name+"%'" or AD like'"+name+"%'" or AE like'"+name+"%'" or AF like'"+name+"%'" or AG like'"+name+"%'" or AH like'"+name+"%'"
+sql = encodeURI(sql)
+var key ="1N3rcE1YwRhfmFyifiVoLO12IxL5UvKFoRw9bEjxi8tc&gid"
+var gid = "0"
+window.location.assign("https://spreadsheets.google.com/tq?tqx=out:html&tq="+sql+"&key="+key+"&gid="+gid)
+        }
     </script>
 </head
 <body>
 Name: <input type="text" id="nameInput"><br><br>
 
-<input type="button" value="Send" onclick="SendScore()">
+<input type="button" value="Send" onclick="SendScore()"><br><br>
+<input type="button" value="Send2" onclick="SendScore2()">
 
 </body>
 </html>
